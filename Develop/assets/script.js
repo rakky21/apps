@@ -1,4 +1,3 @@
-console.log("hello")
 
 // fetch('https://momentjs.com/downloads/moment-with-locales.js')
 //     .then(response => response.json())
@@ -27,9 +26,9 @@ console.log("hello")
 // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
 // grabbing 21 'currentday' for it to be displayed/
-        var responseContainerEl = document.querySelector('#currentDay');
+var responseContainerEl = document.querySelector('#currentDay');
 // what we want to display
-var  currentDay = moment().format('MMMM Do YYYY');
+var currentDay = moment().format('MMMM Do YYYY');
 responseContainerEl.textContent = currentDay
 var currentHour = moment().hours()
 
@@ -44,22 +43,22 @@ var currentHour = moment().hours()
 // TIME AND COLORS INDICATING TIME 
 console.log(currentHour)
 
-for (var i = 9; i < 18; i++){
-    var timeBlock = $('#time'+i)
-    if (i < currentHour){
-        timeBlock.addClass ("past")
+for (var i = 9; i < 18; i++) {
+    var timeBlock = $('#time' + i)
+    if (i < currentHour) {
+        timeBlock.addClass("past")
     }
 }
-for (var i = 9; i < 18; i++){
-    var timeBlock = $('#time'+i)
-    if (i == currentHour){
-        timeBlock.addClass ("present")
+for (var i = 9; i < 18; i++) {
+    var timeBlock = $('#time' + i)
+    if (i == currentHour) {
+        timeBlock.addClass("present")
     }
 }
-for (var i = 9; i < 18; i++){
-    var timeBlock = $('#time'+i)
-    if (i > currentHour){
-        timeBlock.addClass ("future")
+for (var i = 9; i < 18; i++) {
+    var timeBlock = $('#time' + i)
+    if (i > currentHour) {
+        timeBlock.addClass("future")
     }
 }
 
@@ -73,3 +72,49 @@ for (var i = 9; i < 18; i++){
 // ✅ scheduled 
 // hover over to show locked or unlocked image
 
+
+// LOCAL STORAGE BASE
+$( "button" ).click( function() {
+    var value,
+      div = $( "div" )[ 0 ];
+    switch ( $( "button" ).index( this ) ) {
+    case 0 :
+      value = jQuery.data( div, "blah" );
+      break;
+    case 1 :
+      jQuery.data( div, "blah", "hello" );
+      value = "Stored!";
+      break;
+    case 2 :
+      jQuery.data( div, "blah", 86 );
+      value = "Stored!";
+      break;
+    case 3 :
+      jQuery.removeData( div, "blah" );
+      value = "Removed!";
+      break;
+    }
+    $( "span" ).text( "" + value );
+  });
+
+
+
+// TEST
+
+  $( "button" ).click( function() {
+    var value,
+      div = $( "div" )[ 0 ];
+    switch ( $( "button" ).index( this ) ) {
+// lock/save the info so it doesn't get deleted when refreshing the page.
+    case "lock" :
+      jQuery.data( input, "blah");
+      value = "Stored!";
+      break;
+    //   remove unlock
+    case 2 :
+      jQuery.removeData( input, "blah" );
+      value = "Unlock";
+      break;
+    }
+    $( "span" ).text( "" + value );
+  });
