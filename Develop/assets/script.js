@@ -41,7 +41,7 @@ var currentHour = moment().hours()
 // for (var i = 0 ; i < 24 ; i = i++);
 // console.log( this)
 // TIME AND COLORS INDICATING TIME 
-console.log(currentHour)
+// console.log(currentHour)
 
 for (var i = 9; i < 18; i++) {
     var timeBlock = $('#time' + i)
@@ -74,47 +74,110 @@ for (var i = 9; i < 18; i++) {
 
 
 // LOCAL STORAGE BASE
-$( "button" ).click( function() {
-    var value,
-      div = $( "div" )[ 0 ];
-    switch ( $( "button" ).index( this ) ) {
-    case 0 :
-      value = jQuery.data( div, "blah" );
-      break;
-    case 1 :
-      jQuery.data( div, "blah", "hello" );
-      value = "Stored!";
-      break;
-    case 2 :
-      jQuery.data( div, "blah", 86 );
-      value = "Stored!";
-      break;
-    case 3 :
-      jQuery.removeData( div, "blah" );
-      value = "Removed!";
-      break;
-    }
-    $( "span" ).text( "" + value );
-  });
+// $( "button" ).click( function() {
+//     var value,
+//       div = $( "div" )[ 0 ];
+//     switch ( $( "button" ).index( this ) ) {
+//     case 0 :
+//       value = jQuery.data( div, "blah" );
+//       break;
+//     case 1 :
+//       jQuery.data( div, "blah", "hello" );
+//       value = "Stored!";
+//       break;
+//     case 2 :
+//       jQuery.data( div, "blah", 86 );
+//       value = "Stored!";
+//       break;
+//     case 3 :
+//       jQuery.removeData( div, "blah" );
+//       value = "Removed!";
+//       break;
+//     }
+//     $( "span" ).text( "" + value );
+//   });
 
 
 
-// TEST
+var messageInput = document.querySelector('#time9');
+var messageInput = document.querySelector('#time10');
+var messageInput = document.querySelector('#time11');
+var messageInput = document.querySelector('#time12');
+var messageInput = document.querySelector('#time13');
+var messageInput = document.querySelector('#time14');
+var messageInput = document.querySelector('#time15');
+var messageInput = document.querySelector('#time16');
+var messageInput = document.querySelector('#time17');
 
-  $( "button" ).click( function() {
-    var value,
-      div = $( "div" )[ 0 ];
-    switch ( $( "button" ).index( this ) ) {
-// lock/save the info so it doesn't get deleted when refreshing the page.
-    case "lock" :
-      jQuery.data( input, "blah");
-      value = "Stored!";
-      break;
-    //   remove unlock
-    case 2 :
-      jQuery.removeData( input, "blah" );
-      value = "Unlock";
-      break;
-    }
-    $( "span" ).text( "" + value );
-  });
+
+var messagenine = localStorage.getItem('time9');
+var messageten = localStorage.getItem('time10');
+var messageeleven = localStorage.getItem('time11');
+var messagetwelve = localStorage.getItem('time12');
+var messagethirteen = localStorage.getItem('time13');
+var messagefourteen = localStorage.getItem('time14');
+var messagefiften = localStorage.getItem('time15');
+var messagesixteen = localStorage.getItem('time16');
+var messageseventeen = localStorage.getItem('time17');
+
+
+
+localStorage.setItem('time9', );
+localStorage.setItem('time10', );
+localStorage.setItem('time11', );
+localStorage.setItem('time12', );
+localStorage.setItem('time13', );
+localStorage.setItem('time14', );
+localStorage.setItem('time15', );
+localStorage.setItem('time16', );
+localStorage.setItem('time17', );
+
+
+
+
+
+// function messageBox () {
+// if the button is pressed. save/delete the message box.
+var saved = document.getElementById('#save');
+var resets = document.
+localStorage.setItem ('messageBox','');
+document.getElementById('time9').innerHTML = localStorage.getItem('messageBox');
+
+
+button.addEvenListener ('click', function(event){
+    event.preventDefault();}
+
+
+// console.log(messageBox)
+// savemessageBox();
+
+// localStorage.getItem ('time9','time10','time11');
+// console.log (localStorage)
+
+// function populateStorage() {
+//     localStorage.setItem('bgcolor', 'red');
+//     localStorage.setItem('font', 'Helvetica');
+//     localStorage.setItem('image', 'myCat.png');
+//   }
+// // TEST
+
+//   $( "button" ).click( function() {
+//     var value,
+//       div = $( "container" )[ 0 ];
+//     switch ( $( "button" ).index( this ) ) {
+// // lock/save the info so it doesn't get deleted when refreshing the page.
+//     case "lock" :
+//       jQuery.data( input, "text");
+//       value = "";
+//       break;
+//     //   remove unlock so it will delete once reload page.
+//     case 2 :
+//       jQuery.removeData( input, "text" );
+//       value = "";
+//       break;
+//     }
+//     $( "span" ).text( "" + value );
+//   });
+
+
+
