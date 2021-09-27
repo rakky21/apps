@@ -99,53 +99,133 @@ for (var i = 9; i < 18; i++) {
 
 
 
-var messageInput = document.querySelector('#time9');
-var messageInput = document.querySelector('#time10');
-var messageInput = document.querySelector('#time11');
-var messageInput = document.querySelector('#time12');
-var messageInput = document.querySelector('#time13');
-var messageInput = document.querySelector('#time14');
-var messageInput = document.querySelector('#time15');
-var messageInput = document.querySelector('#time16');
-var messageInput = document.querySelector('#time17');
+// localStorage.setItem('time9', '');
 
+const time9 = document.getElementById('time9');
+const btn9 = document.getElementById('btn9');
 
-var messagenine = localStorage.getItem('time9');
-var messageten = localStorage.getItem('time10');
-var messageeleven = localStorage.getItem('time11');
-var messagetwelve = localStorage.getItem('time12');
-var messagethirteen = localStorage.getItem('time13');
-var messagefourteen = localStorage.getItem('time14');
-var messagefiften = localStorage.getItem('time15');
-var messagesixteen = localStorage.getItem('time16');
-var messageseventeen = localStorage.getItem('time17');
+btn9.onclick = function (){
+    const nue = time9.value;
+    const ve  = btn9.value;
+    // console.log(nue);
+    // console.log(ve);
+
+localStorage.setItem('time9',time9);
+localStorage.setItem('btn9',btn9);
+};
+// same butten to delete it once pressed again
+// JSON.parse(window.localStorage.getItem('time9'));    ???
 
 
 
-localStorage.setItem('time9', );
-localStorage.setItem('time10', );
-localStorage.setItem('time11', );
-localStorage.setItem('time12', );
-localStorage.setItem('time13', );
-localStorage.setItem('time14', );
-localStorage.setItem('time15', );
-localStorage.setItem('time16', );
-localStorage.setItem('time17', );
+// 10
+const time10 = document.getElementById('time10');
+const btn10 = document.getElementById('btn10');
 
+btn10.onclick = function (){
+    const di = time10.value;
+    const ez  = btn10.value;
+    console.log(di);
+    console.log(ez);
+};
+
+
+
+// // 11
+// const time11 = document.getElementById('time11');
+// const btn11 = document.getElementById('btn11');
+
+// btn11.onclick = function (){
+//     const onc = time11.value;
+//     const nce  = btn11.value;
+//     console.log(onc);
+//     console.log(nce);
+// };
+
+
+// // 12
+// const time12 = document.getElementById('time12');
+// const btn12 = document.getElementById('btn12');
+
+// btn12.onclick = function (){
+//     const doc = time12.value;
+//     const oce  = btn12.value;
+// };
+
+
+
+// // 13
+// const time13 = document.getElementById('time13');
+// const btn13 = document.getElementById('btn13');
+
+// btn9.onclick = function (){
+//     const nue = time9.value;
+//     const ve  = btn9.value;
+//     console.log(nue);
+//     console.log(ve);
+// };
+
+
+// // 14
+// const time9 = document.getElementById('time9');
+// const btn9 = document.getElementById('btn9');
+
+// btn9.onclick = function (){
+//     const nue = time9.value;
+//     const ve  = btn9.value;
+//     console.log(nue);
+//     console.log(ve);
+// };
+
+
+// // 15
+// const time9 = document.getElementById('time9');
+// const btn9 = document.getElementById('btn9');
+
+// btn9.onclick = function (){
+//     const nue = time9.value;
+//     const ve  = btn9.value;
+//     console.log(nue);
+//     console.log(ve);
+// };
+
+
+// // 16
+// const time9 = document.getElementById('time9');
+// const btn9 = document.getElementById('btn9');
+
+// btn9.onclick = function (){
+//     const nue = time9.value;
+//     const ve  = btn9.value;
+//     console.log(nue);
+//     console.log(ve);
+// };
+
+
+// // 17
+// const time9 = document.getElementById('time9');
+// const btn9 = document.getElementById('btn9');
+
+// btn9.onclick = function (){
+//     const nue = time9.value;
+//     const ve  = btn9.value;
+//     console.log(nue);
+//     console.log(ve);
+// };
 
 
 
 
 // function messageBox () {
 // if the button is pressed. save/delete the message box.
-var saved = document.getElementById('#save');
-var resets = document.
-localStorage.setItem ('messageBox','');
-document.getElementById('time9').innerHTML = localStorage.getItem('messageBox');
+// var saved = document.getElementById('#save');
+// var resets = document.
+// localStorage.setItem ('messageBox','');
+// document.getElementById('time9').innerHTML = localStorage.getItem('messageBox');
 
 
-button.addEvenListener ('click', function(event){
-    event.preventDefault();}
+// button.addEvenListener ('click', function(event){
+//     event.preventDefault();}
 
 
 // console.log(messageBox)
@@ -178,6 +258,5 @@ button.addEvenListener ('click', function(event){
 //     }
 //     $( "span" ).text( "" + value );
 //   });
-
 
 
