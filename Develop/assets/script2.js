@@ -217,20 +217,23 @@ for (var i = 9; i < 18; i++) {
     }
 }
 
+var messageBox = JSON.parse(localStorage.getItem("timeBlocks"));
 var messageBox = document.getElementsByClassName('timeBlocks');
-console.log(messageBox)
 
-
-
-var messageBox = JSON.parse(localStorage.getItem('timeBlocks'));
-
-
-$('#saveBtn').click(function() {
-    $('#timeBlocks').addClass('active');
-    console.log(messageBox)
-});
-
-
+// var messageBox = JSON.parse(localStorage.getItem('timeBlocks'));
+$('#saveBtn').click(function () {
+    // var messageBox = JSON.parse(localStorage.getItem("timeBlocks"));
+    // var messageBox = document.getElementsByClassName('timeBlocks');
+    if (messageBox) {
+        $('#timeBlocks').addClass('active');
+        // console.log(messageBox);
+        // $("#weatherBtn").click(function() {
+        // hide delete button
+        // $("#weatherModalFooter").hide()
+        // get city name from local storage
+        // if localstorage is not empty
+    }
+})
 // const time11 = document.getElementById('time11');
 // btn11.onclick = function () {
 //     const onc = time11.value;

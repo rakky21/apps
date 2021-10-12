@@ -55,3 +55,8 @@ const time17 = document.getElementById('time17');
 btn17.onclick = function () {
     const esiet = time17.value;
 };
+
+$('#saveBtn').click(function() {
+    $('#timeBlocks').addClass('active');
+    console.log(messageBox)
+});
