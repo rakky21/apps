@@ -40,7 +40,7 @@ const btn9 = document.getElementById('btn9');
 btn9.onclick = function (){
 localStorage.setItem('time9', time9.value);
 
-localStorage.removeItem('time9', time9.value)
+// localStorage.removeItem('time9', time9.value)
 };
 
 const time10 = document.getElementById('time10');
@@ -48,7 +48,7 @@ const btn10 = document.getElementById('btn10');
 btn10.onclick = function (){
 localStorage.setItem('time10', time10.value);
 
-localStorage.removeItem('time10', time10.value)
+// localStorage.removeItem('time10', time10.value)
 };
 
 const time11 = document.getElementById('time11');
@@ -56,7 +56,7 @@ const btn11 = document.getElementById('btn11');
 btn11.onclick = function (){
 localStorage.setItem('time11', time11.value);
 
-localStorage.removeItem('time11', time11.value)
+// localStorage.removeItem('time11', time11.value)
 };
 
 
@@ -65,7 +65,7 @@ const btn12 = document.getElementById('btn12');
 btn12.onclick = function (){
 localStorage.setItem('time12', time12.value);
 
-localStorage.removeItem('time12', time12.value)
+// localStorage.removeItem('time12', time12.value)
 };
 
 
@@ -74,7 +74,7 @@ const btn13 = document.getElementById('btn13');
 btn13.onclick = function (){
 localStorage.setItem('time13', time13.value);
 
-localStorage.removeItem('time13', time13.value)
+// localStorage.removeItem('time13', time13.value)
 };
 
 const time14 = document.getElementById('time14');
@@ -82,7 +82,7 @@ const btn14 = document.getElementById('btn14');
 btn14.onclick = function (){
 localStorage.setItem('time14', time14.value);
 
-localStorage.removeItem('time14', time14.value)
+// localStorage.removeItem('time14', time14.value)
 };
 
 const time15 = document.getElementById('time15');
@@ -90,16 +90,17 @@ const btn15 = document.getElementById('btn15');
 btn15.onclick = function (){
 localStorage.setItem('time15', time15.value);
 
-localStorage.removeItem('time15', time15.value)
+// localStorage.removeItem('time15', time15.value)
 };
 
 
 const time16 = document.getElementById('time16');
 const btn16 = document.getElementById('btn16');
 btn16.onclick = function (){
+    if  (btn)
 localStorage.setItem('time16', time16.value);
 
-localStorage.removeItem('time16', time16.value)
+// localStorage.removeItem('time16', time16.value)
 };
 
 
@@ -108,5 +109,5 @@ const btn17 = document.getElementById('btn17');
 btn17.onclick = function (){
 localStorage.setItem('time17', time17.value);
 
-localStorage.removeItem('time17', time17.value)
+// localStorage.removeItem('time17', time17.value)
 };
